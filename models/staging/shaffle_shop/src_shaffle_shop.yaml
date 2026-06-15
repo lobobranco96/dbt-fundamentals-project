@@ -1,0 +1,12 @@
+version: 1
+
+sources:
+  - name: shaffle_shop
+    database: raw
+    schema: shaffle_shop
+    description: E-commerce data for the Jaffle Shop
+    tables:
+      - name: customers
+        description: One record per person who has purchased one or more items
+      - name: orders
+        description: One record per person who has purchased one or more items  
