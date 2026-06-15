@@ -1,15 +1,18 @@
-with source as (
+with 
 
-    select * from {{ source('raw_shaffle_shop', 'customers') }}
+source as (
+
+    select * from {{ source('shaffle_shop', 'customers') }}
 
 ),
 
 renamed as (
 
     select
-        id         as customer_id,
+        id customer_id,
         first_name,
         last_name
+
     from source
 
 )
